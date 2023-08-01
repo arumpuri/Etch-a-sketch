@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h2>Etch A Sketch</h2>
+      <div class="control">
+        <button class="btn btn-secondary" onclick="setColor('black')">Black</button>
+        <button class="btn btn-danger" id="rainbow" onclick="setColor('rainbow')">Rainbow</button>
+        <button class="btn btn-warning" id="eraser" onclick="eraseColor()">Eraser</button>
+        <button class="btn btn-info" id="reset" onclick="resetBoard()">Reset</button>
+        <div >Grid:<output id="sizeValue"></output></div>
+        <input id="sizeSlider" type="range" min="1" max="64" step="1"/>
+      </div>
+
+      <div class="gameboard">
+        <div id="gridBoard"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

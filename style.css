@@ -1,0 +1,25 @@
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  justify-content: space-around;
+}
+
+#gridBoard {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black ;
+  margin-top: 2rem;
+  display: grid;
+  
+}
